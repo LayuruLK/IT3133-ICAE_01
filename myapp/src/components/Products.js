@@ -1,9 +1,11 @@
 import '../assets/CSS/layout.css';
 import { flowers } from './FlowerDB';
 import Product from './Product';
+import { useState } from 'react';
 
 
 export default function Products(){
+    const [items, setItems] = useState([]);
    
     return(
         <>
@@ -25,6 +27,7 @@ export default function Products(){
             <div className="item3">
                 {
                 //cart
+
                 }
             </div>
         </>

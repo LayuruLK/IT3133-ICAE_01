@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import '../assets/CSS/layout.css';
 export default function Product({key, item}){
+    const [quantity, setQuentity] = useState(0);
     
     return(
         <div className="grid-item">
@@ -10,9 +12,9 @@ export default function Product({key, item}){
                     <h5 class="card-title">{item.name} Price: {item.price}</h5>
                     <div class="quantity-container">
                         <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" />
+                        <input type="number" id="quantity" name="quantity" value={quantity} onChange={(e) => setQuentity(Number(e.target.value))}/>
                     </div>
-                    <button class="card-button">Add to Cart</button>
+                    <button class="card-button" /* onClick={handleAddtoCart} */>Add to Cart</button>
                 </div>
             </div>
         </div>
