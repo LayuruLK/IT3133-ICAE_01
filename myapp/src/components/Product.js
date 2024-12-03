@@ -21,7 +21,7 @@ export default function Product({item, addtoCart}){
                         <label for="quantity">Quantity:</label>
                         <input type="number" id="quantity" name="quantity" value={quantity} onChange={(e) => setQuentity(Number(e.target.value))}/>
                     </div>
-                    <button class="card-button" /* onClick={handleAddtoCart} */>Add to Cart</button>
+                    <button class="card-button"  onClick={handleAddtoCart} >Add to Cart</button>
                 </div>
             </div>
         </div>
