@@ -5,7 +5,7 @@ export default function Product({key, item}){
         <div className="grid-item">
 
             <div class="card">
-                <img  />
+                <img  src={require('../assets/image/'+ item.img)}/>
                 <div class="card-body">
                     <h5 class="card-title">{item.name} Price: {item.price}</h5>
                     <div class="quantity-container">
