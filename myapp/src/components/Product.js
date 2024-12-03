@@ -1,5 +1,5 @@
 import '../assets/CSS/layout.css';
-export default function Product(){
+export default function Product({key, item}){
     
     return(
         <div className="grid-item">
@@ -7,7 +7,7 @@ export default function Product(){
             <div class="card">
                 <img  />
                 <div class="card-body">
-                    <h5 class="card-title">Price:</h5>
+                    <h5 class="card-title">{item.name} Price: {item.price}</h5>
                     <div class="quantity-container">
                         <label for="quantity">Quantity:</label>
                         <input type="number" id="quantity" name="quantity" />
