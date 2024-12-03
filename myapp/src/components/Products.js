@@ -1,4 +1,5 @@
 import '../assets/CSS/layout.css';
+import Cart from './Cart';
 import { flowers } from './FlowerDB';
 import Product from './Product';
 import { useState } from 'react';
@@ -40,7 +41,7 @@ export default function Products(){
             <div className="item3">
                 {
                 //cart
-
+                    <Cart items={items}/>
                 }
             </div>
         </>
