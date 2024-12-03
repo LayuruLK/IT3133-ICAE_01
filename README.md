@@ -138,10 +138,10 @@ export const flowers = [
 ## 📸 Screenshots
 
 ### Flower List
-![Flower List Screenshot](https://drive.google.com/file/d/1iB7Moj6vlIaFJ6wEW7JvsJorXM6Hzswu/view?usp=sharing)
+![Flower List Screenshot](/myapp/src/assets/image/Screenshots/Screenshot 2024-12-03 231438.png)
 
 ### Cart
-![Cart Screenshot](https://drive.google.com/file/d/1iB7Moj6vlIaFJ6wEW7JvsJorXM6Hzswu/view?usp=sharing)
+![Cart Screenshot](/myapp/src/assets/image/Screenshots/Screenshot 2024-12-03 231448.png)
 
 ## 🌟 Future Improvements
 
