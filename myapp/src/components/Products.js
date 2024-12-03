@@ -6,6 +6,19 @@ import { useState } from 'react';
 
 export default function Products(){
     const [items, setItems] = useState([]);
+
+    const addtoCart = (item, quantity) => {
+        const existingItem = items.find(flower => flower.id === item.id);
+
+        if (existingItem) {
+            existingItem.qty += quantity;
+            setItems([...items]);
+        }
+
+        else {
+            setItems([...items, {...item, qty: quantity}]);
+        }
+    }
    
     return(
         <>
@@ -18,7 +31,7 @@ export default function Products(){
                     {
                         //product
                         flowers.map((flower =>
-                            <Product key={flower.id} item={flower}/>
+                            <Product key={flower.id} item={flower} addtoCart={addtoCart}/>
                         ))
                     }
                 </div>
