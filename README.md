@@ -61,7 +61,7 @@ Ensure you have the following installed:
 1. Clone the repository:
    ```bash
    git clone https://github.com/LayuruLK/IT3133-ICAE_01.git
-   cd flower-shop-react
+   cd myapp
    ```
 
 2. Install dependencies:
@@ -126,7 +126,7 @@ The `flowers` object contains an array of flower details:
 export const flowers = [
   { id: 1, name: "Rose", price: 5, img: "rose.jpg" },
   { id: 2, name: "Tulip", price: 7, img: "tulip.jpg" },
-  // Add more flowers as needed
+  .............
 ];
 ```
 
